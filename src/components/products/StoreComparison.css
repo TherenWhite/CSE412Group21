@@ -1,0 +1,102 @@
+.store-comparison {
+    margin-top: 16px;
+  }
+  
+  .store-comparison-table table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .store-comparison-table th,
+  .store-comparison-table td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .store-comparison-table th {
+    background-color: #f5f5f5;
+    font-weight: 500;
+  }
+  
+  .store-comparison-table tr.best-price {
+    background-color: rgba(76, 175, 80, 0.1);
+  }
+  
+  .store-comparison-table tr.best-price td:first-child::before {
+    content: '✓ Best Price';
+    display: block;
+    font-size: 0.8rem;
+    color: var(--primary-color);
+    margin-bottom: 4px;
+  }
+  
+  .in-stock {
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+  }
+  
+  .in-stock::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    margin-right: 6px;
+  }
+  
+  .out-of-stock {
+    color: #999;
+    display: flex;
+    align-items: center;
+  }
+  
+  .out-of-stock::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #999;
+    margin-right: 6px;
+  }
+  
+  .view-store-btn {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .view-store-btn:hover {
+    background-color: #1976d2;
+  }
+  
+  .view-store-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .price-difference-note {
+    margin-top: 16px;
+    font-weight: 500;
+    color: var(--primary-color);
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .store-comparison-table {
+      overflow-x: auto;
+    }
+    
+    .store-comparison-table table {
+      min-width: 600px;
+    }
+  }

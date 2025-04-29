@@ -1,0 +1,104 @@
+.user-profile-page {
+    padding: 20px;
+  }
+  
+  .user-profile-page h1 {
+    margin-bottom: 24px;
+  }
+  
+  .profile-container {
+    max-width: 800px;
+  }
+  
+  .profile-section {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    margin-bottom: 24px;
+  }
+  
+  .profile-section h2 {
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+    font-size: 1.3rem;
+  }
+  
+  .profile-field {
+    margin-bottom: 12px;
+    display: flex;
+  }
+  
+  .field-label {
+    font-weight: 500;
+    width: 150px;
+    color: #666;
+  }
+  
+  .field-value {
+    flex: 1;
+  }
+  
+  .profile-actions {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .edit-profile-btn,
+  .change-password-btn {
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .edit-profile-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+  }
+  
+  .edit-profile-btn:hover {
+    background-color: #388e3c;
+  }
+  
+  .change-password-btn {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+  }
+  
+  .change-password-btn:hover {
+    background-color: rgba(76, 175, 80, 0.1);
+  }
+  
+  .under-construction-text {
+    color: #666;
+    font-style: italic;
+  }
+  
+  .login-prompt {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .login-button {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 12px 24px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+  
+  .login-button:hover {
+    background-color: #388e3c;
+  }
