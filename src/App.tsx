@@ -1,8 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext';
 import { ShoppingListProvider } from './contexts/ShoppingListContext';
 import AppRoutes from './routes';
+import ProductFilter from './components/products/ProductFilter';
+import ProductDetailPage from './pages/ProductDetailPage';
 import Header from './components/common/Header';
 import Footer from './components/common/Footer';
 import './App.css';

@@ -33,7 +33,8 @@ const ProductDetailPage: React.FC = () => {
         
         //get price history
         const historyResponse = await productApi.getPriceHistory(Number(productId));
-        setPriceHistory(historyResponse.data);
+        // convert any string prices to numbers  //<- added
+        setPriceHistory(historyResponse.data.map(h => ({ ...h, price: typeof h.price === 'string' ? parseFloat(h.price) : h.price }))); //<- added
         
         //get coupons
         const couponsResponse = await couponApi.getProductCoupons(Number(productId));
@@ -123,8 +124,9 @@ const ProductDetailPage: React.FC = () => {
   }, [productId]);
   
   //price format
-  const formatPrice = (price: number): string => {
-    return `$${price.toFixed(2)}`;
+  const formatPrice = (price: number | string): string => { //<- modified
+    const num = typeof price === 'string' ? parseFloat(price) : price; //<- added
+    return `$${num.toFixed(2)}`; //<- modified
   };
   
   //date format

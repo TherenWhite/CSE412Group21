@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ProductFilters, Store } from '../../types';
+import { useNavigate } from 'react-router-dom'; 
 import './ProductFilter.css';
 
 interface ProductFilterProps {
@@ -9,6 +10,7 @@ interface ProductFilterProps {
 }
 
 const ProductFilter: React.FC<ProductFilterProps> = ({ filters, onFilterChange, stores }) => {
+  const navigate = useNavigate(); 
   const [category, setCategory] = useState<string>(filters.category || '');
   const [storeId, setStoreId] = useState<number | undefined>(filters.storeId);
   const [minPrice, setMinPrice] = useState<string>(filters.minPrice?.toString() || '');
@@ -53,6 +55,13 @@ const ProductFilter: React.FC<ProductFilterProps> = ({ filters, onFilterChange, 
     }
     
     onFilterChange(newFilters);
+    const params = new URLSearchParams(); 
+    Object.entries(newFilters).forEach(([key, value]) => { 
+      if (value !== undefined && value !== '') { 
+        params.set(key, String(value));
+      } 
+    }); 
+    navigate(`/products?${params.toString()}`); 
   };
   
   //filter reset
@@ -70,6 +79,7 @@ const ProductFilter: React.FC<ProductFilterProps> = ({ filters, onFilterChange, 
     }
     
     onFilterChange(newFilters);
+    navigate('/products'); 
   };
   
   //our chosen categories
