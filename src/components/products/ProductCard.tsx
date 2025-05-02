@@ -13,8 +13,10 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const { isAuthenticated } = authState;
   
   //price format
-  const formatPrice = (price: number): string => {
-    return `$${price.toFixed(2)}`;
+  const formatPrice = (price: number | string): string => {
+    //make sure price is number
+    const numPrice = typeof price === 'string' ? parseFloat(price) : price;
+    return `$${!isNaN(numPrice) ? numPrice.toFixed(2) : '0.00'}`;
   };
   
   //get store name [BASIC]

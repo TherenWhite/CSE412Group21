@@ -1,3 +1,4 @@
+//grocery-price-tracker/src/api/index.ts
 import axios from 'axios';
 import { 
   Product, 
@@ -57,7 +58,7 @@ export const authApi = {
   
   updateProfile: async (userId: number, userData: Partial<User>): Promise<ApiResponse<User>> => {
     //TODO: Update endpoint once backend is implemented
-    const response = await api.put(`/users/${userId}`, userData);
+    const response = await api.put('/auth/profile', userData);
     return response.data;
   },
 };
@@ -78,7 +79,7 @@ export const productApi = {
   
   getProductsByStore: async (storeId: number): Promise<ApiResponse<Product[]>> => {
     //TODO: Update endpoint once backend is implemented
-    const response = await api.get(`/stores/${storeId}/products`);
+    const response = await api.get(`/products/store/${storeId}`);
     return response.data;
   },
   
@@ -120,7 +121,7 @@ export const storeApi = {
 export const shoppingListApi = {
   getUserLists: async (userId: number): Promise<ApiResponse<ShoppingList[]>> => {
     //TODO: Update endpoint once backend is implemented
-    const response = await api.get(`/users/${userId}/shopping-lists`);
+    const response = await api.get('/shopping-lists');
     return response.data;
   },
   
@@ -155,7 +156,7 @@ export const shoppingListApi = {
 export const preferenceApi = {
   getUserPreferences: async (userId: number): Promise<ApiResponse<ProductPreference[]>> => {
     //TODO: Update endpoint once backend is implemented
-    const response = await api.get(`/users/${userId}/preferences`);
+    const response = await api.get('/preferences');
     return response.data;
   },
   
@@ -182,13 +183,13 @@ export const preferenceApi = {
 export const couponApi = {
   getProductCoupons: async (productId: number): Promise<ApiResponse<Coupon[]>> => {
     //TODO: Update endpoint once backend is implemented
-    const response = await api.get(`/products/${productId}/coupons`);
+    const response = await api.get(`/coupons/product/${productId}`);
     return response.data;
   },
   
   getStoreCoupons: async (storeId: number): Promise<ApiResponse<Coupon[]>> => {
     //TODO: Update endpoint once backend is implemented
-    const response = await api.get(`/stores/${storeId}/coupons`);
+    const response = await api.get(`/coupons/store/${storeId}`);
     return response.data;
   },
 };
