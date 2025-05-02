@@ -1,4 +1,3 @@
-//grocery-price-tracker/backend/routes/auth.js
 const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcrypt');
@@ -8,6 +7,7 @@ const auth = require('../middleware/auth');
 
 //register a user
 router.post('/register', async (req, res) => {
+  console.log('{REGISTER BODY}', req.body);
   try {
     const { email, password, zip_code, budget } = req.body;
     
@@ -19,11 +19,11 @@ router.post('/register', async (req, res) => {
     }
     
     //for actual app we'd hash password:
-    // const salt = await bcrypt.genSalt(10);
-    // const hashedPassword = await bcrypt.hash(password, salt);
+    const salt = await bcrypt.genSalt(10);
+    const hashedPassword = await bcrypt.hash(password, salt);
     
     //using plain text right now for passowrd
-    const hashedPassword = password;
+    //const hashedPassword = password;
     
     //instert a user
     const newUser = await pool.query(
@@ -72,7 +72,7 @@ router.post('/login', async (req, res) => {
     
     //in actual app we'd use hash comparison
     //bcrypt.compare(password, user.password)
-    const isMatch = (password === user.password);
+    const isMatch = bcrypt.compare(password, user.password);
     
     if (!isMatch) {
       return res.status(401).json({ success: false, message: 'Invalid credentials' });

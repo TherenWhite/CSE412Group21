@@ -26,6 +26,11 @@ export interface Store {
     zip_code: string;
     budget: number;
   }
+
+  export interface ShoppingListItem{
+    product: Product;
+    quantity: number;
+  }
   
   //shopping list entity
   export interface ShoppingList {
@@ -33,7 +38,8 @@ export interface Store {
     user_id: number;
     list_name: string;
     total: number;
-    applied_coupons: string;
+    applied_coupons: string | null;
+    items?: ShoppingListItem[];
   }
   
   //product preference entity

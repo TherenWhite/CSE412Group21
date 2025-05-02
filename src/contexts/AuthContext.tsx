@@ -58,6 +58,9 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
         //fetch user data
         const response = await authApi.getCurrentUser();
         
+        const u = response.data;
+        u.budget = parseFloat(u.budget as unknown as string);
+        
         setAuthState({
           isAuthenticated: true,
           user: response.data,
@@ -90,6 +93,9 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
       //save token (localStorage)
       localStorage.setItem('token', response.data.token);
       
+      const u = response.data;
+      u.user.budget = parseFloat(u.user.budget as unknown as string);
+
       setAuthState({
         isAuthenticated: true,
         user: response.data.user,
@@ -115,6 +121,9 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
       //save token (localStorage)
       localStorage.setItem('token', response.data.token);
       
+      const u = response.data;
+      u.user.budget = parseFloat(u.user.budget as unknown as string);
+
       setAuthState({
         isAuthenticated: true,
         user: response.data.user,
@@ -153,6 +162,9 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     try {
       const response = await authApi.updateProfile(authState.user.user_id, userData);
       
+      const u = response.data;
+      u.budget = parseFloat(u.budget as unknown as string);
+
       setAuthState(prev => ({
         ...prev,
         user: response.data,

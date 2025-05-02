@@ -120,34 +120,47 @@ export const storeApi = {
 //shopping list API
 export const shoppingListApi = {
   getUserLists: async (userId: number): Promise<ApiResponse<ShoppingList[]>> => {
-    //TODO: Update endpoint once backend is implemented
-    const response = await api.get('/shopping-lists');
+    // fetch all lists for this user
+    const response = await api.get<ApiResponse<ShoppingList[]>>(
+      `/users/${userId}/shopping-lists`
+    );
     return response.data;
   },
   
   getListById: async (listId: number): Promise<ApiResponse<ShoppingList>> => {
-    //TODO: Update endpoint once backend is implemented
-    const response = await api.get(`/shopping-lists/${listId}`);
+    const response = await api.get<ApiResponse<ShoppingList>>(
+      `/shopping-lists/${listId}`
+    );
     return response.data;
   },
   
-
-  createList: async (list: Omit<ShoppingList, 'list_id'>): Promise<ApiResponse<ShoppingList>> => {
-    //TODO: Update endpoint once backend is implemented
-    const response = await api.post('/shopping-lists', list);
+  createList: async (
+    list: Omit<ShoppingList, 'list_id'>
+  ): Promise<ApiResponse<ShoppingList>> => {
+    const response = await api.post<ApiResponse<ShoppingList>>(
+      '/shopping-lists',
+      list
+    );
     return response.data;
   },
   
-  updateList: async (listId: number, list: Partial<ShoppingList>): Promise<ApiResponse<ShoppingList>> => {
-    //TODO: Update endpoint once backend is implemented
-
-    const response = await api.put(`/shopping-lists/${listId}`, list);
+  updateList: async (
+    listId: number,
+    list: Partial<ShoppingList>
+  ): Promise<ApiResponse<ShoppingList>> => {
+    const response = await api.put<ApiResponse<ShoppingList>>(
+      `/shopping-lists/${listId}`,
+      list
+    );
     return response.data;
   },
   
-  deleteList: async (listId: number): Promise<ApiResponse<{ success: boolean }>> => {
-    // TODO: Update endpoint once backend is implemented
-    const response = await api.delete(`/shopping-lists/${listId}`);
+  deleteList: async (
+    listId: number
+  ): Promise<ApiResponse<{ success: boolean }>> => {
+    const response = await api.delete<ApiResponse<{ success: boolean }>>(
+      `/shopping-lists/${listId}`
+    );
     return response.data;
   },
 };
