@@ -1,0 +1,16 @@
+list_id,user_id,list_name,total,applied_coupons
+1,1,Weekly Groceries,45.67,10OFF
+2,2,Party Supplies,78.99,null
+3,3,Essentials,23.45,SAVE5
+4,1,Weekend,67.89,null
+5,4,Monthly Stock,120.34,BULK15
+6,1,Pantry Restock,34.56,null
+7,2,Healthy Options,62.45,HEALTH10
+8,3,Quick Meals,29.75,null
+9,4,Organic Only,89.99,ORGANIC20
+10,5,Protein Foods,55.25,null
+11,1,Breakfast Items,22.50,null
+12,2,Dinner Ingredients,45.75,DINNER15
+13,3,Snacks,18.99,null
+14,4,Beverages,32.50,DRINKS10
+15,5,Fresh Produce,27.85,FRESH5

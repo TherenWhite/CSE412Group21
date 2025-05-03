@@ -1,0 +1,61 @@
+product_id,name,description,category,store_id,current_price,image_url
+101,Whole Milk,DairyPure Milk 50 Skim Vanilla Milk,Dairy,1,4.29,https://target.scene7.com/is/image/Target/GUEST_ab4eb2196-d9ea-4ad3-9400-e7b300fe0b2d
+102,Eggs,Cage Free Fresh Grade A Large Brown Eggs 12ct,Dairy,1,6.59,https://target.scene7.com/is/image/Target/GUEST_3ec62e42-7a7e-4819-999a-d29280ccc8d1
+103,White Bread,Nature's Own Perfectly Crafted White Sandwich Bread,Bakery,1,3.89,https://target.scene7.com/is/image/Target/GUEST_58c5362f-e0a3-4f64-9859-4682f5cc6b5d
+104,Banana,Bananas Goods and Gather single,Produce,1,0.29,https://target.scene7.com/is/image/Target/GUEST_d472adb4-58f9-4b23-8f4f-8579e4cd2fdb
+105,Chicken Breast,Boneless Skinless Chicken Breast Value Pack 5.5lb,Meat,1,13.45,https://target.scene7.com/is/image/Target/GUEST_531198dd-5535-476a-b8b5-badfa9b55000
+106,Ground Beef,All Natural 80/20 Ground Beef 1 lb,Meat,1,6.49,https://target.scene7.com/is/image/Target/GUEST_8712248c-1f49-4350-9bb3-3f64c13e40ce
+107,Potatoes,Russet Potato single,Produce,1,0.75,https://target.scene7.com/is/image/Target/GUEST_c85af5f3-a0a4-48cd-867a-b16e0d90d395
+108,Onions,Yellow Onion single,Produce,1,0.89,https://target.scene7.com/is/image/Target/GUEST_e38a14c1-5107-441f-b0aa-43dab7d353c9
+109,Coffee,Starbucks Medium Roast Ground Coffee,Dry,1,9.89,https://target.scene7.com/is/image/Target/GUEST_d9e4906c-e643-4972-851a-4da66a54fe30
+110,Rice,Jasmine Rice Good & Gather 2 lb,Dry,1,3.29,https://target.scene7.com/is/image/Target/GUEST_82f2bb17-587a-4e61-8b4b-1f4842fe118e
+111,Apples,Honeycrisp Apples 2lb Bag,Produce,1,4.99,https://target.scene7.com/is/image/Target/GUEST_5e83f712-1e7d-4a98-b9e9-4d4dfe579196
+112,Orange Juice,Simply Orange Juice 52oz,Beverages,1,4.79,https://target.scene7.com/is/image/Target/GUEST_12894e9c-044e-47a8-87a7-48c28b2bb36a
+113,Cereal,Honey Nut Cheerios 18oz,Breakfast,1,3.99,https://target.scene7.com/is/image/Target/GUEST_a7fb4212-6f04-428e-a117-4468d11e433e
+114,Pasta,Barilla Spaghetti 16oz,Dry,1,1.49,https://target.scene7.com/is/image/Target/GUEST_8afc15ce-a319-4db1-8855-3dc9318efa2b
+115,Pasta Sauce,Ragu Traditional Pasta Sauce 24oz,Canned,1,2.79,https://target.scene7.com/is/image/Target/GUEST_a348e48d-39d6-4254-9e22-8cac42f960b4
+116,Paper Towels,Bounty Select-A-Size 6 Rolls,Household,1,9.99,https://target.scene7.com/is/image/Target/GUEST_f9f911f6-0129-4b99-8a1a-2909c4d95db6
+117,Laundry Detergent,Tide Original 64 loads,Household,1,11.99,https://target.scene7.com/is/image/Target/GUEST_417a0114-5f7f-4ecf-8b8a-9a2da7e52100
+118,Yogurt,Chobani Greek Yogurt Vanilla 32oz,Dairy,1,5.49,https://target.scene7.com/is/image/Target/GUEST_87b201d1-e90e-4778-9798-7d7e269550c8
+119,Ice Cream,Ben & Jerry's Half Baked 16oz,Frozen,1,4.99,https://target.scene7.com/is/image/Target/GUEST_81935e8b-1e3a-4e0c-9068-a67f9a7c924f
+120,Frozen Pizza,DiGiorno Rising Crust Pepperoni,Frozen,1,6.99,https://target.scene7.com/is/image/Target/GUEST_cefa2c2e-ae23-42cd-bf3d-2fcc01bd7a39
+121,Organic Milk,Horizon Organic Whole Milk 1/2 Gallon,Dairy,2,4.99,https://www.frysfood.com/product/0074117201036
+122,Cage-Free Eggs,Frys Simple Truth Cage-Free Large Brown Eggs 12ct,Dairy,2,5.99,https://www.frysfood.com/product/0001111089188
+123,Whole Wheat Bread,Dave's Killer Bread 21 Whole Grains,Bakery,2,5.49,https://www.frysfood.com/product/0001376300034
+124,Organic Bananas,Simple Truth Organic Bananas per lb,Produce,2,0.69,https://www.frysfood.com/product/0000000094011
+125,Chicken Thighs,Simple Truth Boneless Skinless Chicken Thighs 2lb,Meat,2,9.99,https://www.frysfood.com/product/0002048210000
+126,Grass-Fed Beef,Simple Truth Grass-Fed 85/15 Ground Beef 1lb,Meat,2,7.99,https://www.frysfood.com/product/0001111091830
+127,Sweet Potatoes,Organic Sweet Potatoes per lb,Produce,2,1.49,https://www.frysfood.com/product/0000000000168
+128,Red Onions,Red Onions per lb,Produce,2,0.99,https://www.frysfood.com/product/0000000004082
+129,Peet's Coffee,Peet's Coffee Major Dickason's Blend Whole Bean 12oz,Dry,2,11.99,https://www.frysfood.com/product/0001470012682
+130,Basmati Rice,Kroger Basmati Rice 2lb,Dry,2,3.99,https://www.frysfood.com/product/0001111089666
+131,Organic Granny Smith Apples,Organic Granny Smith Apples 3lb Bag,Produce,2,4.49,https://www.frysfood.com/product/0000000094139
+132,Cold Pressed Juice,Evolution Fresh Defense Up Cold-Pressed Juice 15.2oz,Beverages,2,3.99,https://www.frysfood.com/product/0001421300016
+133,Granola,Simple Truth Organic Ancient Grains Granola 12oz,Breakfast,2,4.29,https://www.frysfood.com/product/0001111087044
+134,Quinoa Pasta,Simple Truth Organic Quinoa Pasta 8oz,Dry,2,2.99,https://www.frysfood.com/product/0001111087160
+135,Organic Marinara,Simple Truth Organic Marinara Sauce 25oz,Canned,2,3.49,https://www.frysfood.com/product/0001111089609
+136,Bamboo Toilet Paper,Who Gives A Crap Bamboo Toilet Paper 24ct,Household,2,27.99,https://www.frysfood.com/product/0000055118439
+137,Plant-Based Detergent,Seventh Generation Laundry Detergent 50oz,Household,2,12.99,https://www.frysfood.com/product/0073291000717
+138,Greek Yogurt,Fage Total 2% Greek Yogurt 35.3oz,Dairy,2,6.99,https://www.frysfood.com/product/0689544900119
+139,Dairy-Free Ice Cream,So Delicious Cashewmilk Salted Caramel 16oz,Frozen,2,5.99,https://www.frysfood.com/product/0074492150018
+140,Cauliflower Pizza,Caulipower Margherita Cauliflower Crust Pizza,Frozen,2,7.99,https://www.frysfood.com/product/0085001618002
+141,Ultra-Filtered Milk,Fairlife Whole Milk 52oz,Dairy,3,3.89,https://m.media-amazon.com/images/I/71JI6GLJDAL._SL1500_.jpg
+142,Free-Range Eggs,Happy Egg Co. Free Range Large Brown Eggs 12ct,Dairy,3,5.29,https://m.media-amazon.com/images/I/81QJUg1eg1L._SL1500_.jpg
+143,Sourdough Bread,La Brea Bakery Sourdough Round Loaf,Bakery,3,4.99,https://m.media-amazon.com/images/I/71Z9PtnP8GL._SL1500_.jpg
+144,Organic Bananas,Whole Foods Market Organic Bananas per bunch,Produce,3,2.99,https://m.media-amazon.com/images/I/61-ThgfyHoL._SL1024_.jpg
+145,Air-Chilled Chicken,Mary's Free Range Air-Chilled Chicken Breast 1lb,Meat,3,9.49,https://m.media-amazon.com/images/I/71vQfUAeUkL._SL1500_.jpg
+146,Organic Ground Beef,Organic 100% Grass-Fed Ground Beef 85/15 1lb,Meat,3,8.99,https://m.media-amazon.com/images/I/71WT9vEODlL._SL1500_.jpg
+147,Japanese Sweet Potatoes,Japanese Sweet Potatoes 2lb,Produce,3,3.99,https://m.media-amazon.com/images/I/71GaGr7OHJL._SL1500_.jpg
+148,Vidalia Onions,Sweet Vidalia Onions 3lb Bag,Produce,3,4.99,https://m.media-amazon.com/images/I/71oXQk3Y4QL._SL1500_.jpg
+149,Stumptown Coffee,Stumptown Hair Bender Whole Bean Coffee 12oz,Dry,3,14.99,https://m.media-amazon.com/images/I/61pu4ZQum8L._SL1200_.jpg
+150,Wild Rice,Lundberg Wild Rice Blend 16oz,Dry,3,4.99,https://m.media-amazon.com/images/I/81qEsxt0iGL._SL1500_.jpg
+151,Pink Lady Apples,Premium Pink Lady Apples 3lb Bag,Produce,3,5.99,https://m.media-amazon.com/images/I/71n0f4AkbzL._SL1500_.jpg
+152,Cold Pressed Green Juice,Suja Organic Cold-Pressed Green Juice 12oz,Beverages,3,4.99,https://m.media-amazon.com/images/I/51WZJC6jG8L._SL1000_.jpg
+153,Ancient Grain Granola,Bear Naked Original Cinnamon Granola 12oz,Breakfast,3,5.49,https://m.media-amazon.com/images/I/81DTI0tGIgL._SL1500_.jpg
+154,Gluten-Free Pasta,Jovial Brown Rice Pasta Spaghetti 12oz,Dry,3,4.29,https://m.media-amazon.com/images/I/71LVJxcHKfL._SL1500_.jpg
+155,Premium Pasta Sauce,Rao's Homemade Marinara Sauce 24oz,Canned,3,8.99,https://m.media-amazon.com/images/I/71nrwYMN0DL._SL1500_.jpg
+156,Recycled Paper Towels,Seventh Generation 100% Recycled Paper Towels 6ct,Household,3,12.99,https://m.media-amazon.com/images/I/81D-5tcWBbL._AC_SL1500_.jpg
+157,Eco-Friendly Detergent,Dropps Stain & Odor Laundry Detergent Pods 64ct,Household,3,19.99,https://m.media-amazon.com/images/I/81Pq9EAWbZL._AC_SL1500_.jpg
+158,Skyr Yogurt,Siggi's 4% Vanilla Icelandic Skyr Yogurt 24oz,Dairy,3,5.99,https://m.media-amazon.com/images/I/61KoN8rMQKL._SL1200_.jpg
+159,Non-Dairy Gelato,Talenti Dairy-Free Sorbetto Alphonso Mango 16oz,Frozen,3,6.49,https://m.media-amazon.com/images/I/715hKzI3IrL._SL1500_.jpg
+160,Veggie Pizza,Amy's Margherita Pizza 13oz,Frozen,3,7.99,https://m.media-amazon.com/images/I/81eCnNcZH7L._SL1500_.jpg

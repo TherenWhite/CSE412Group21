@@ -1,0 +1,6 @@
+user_id,email,password,zip_code,budget
+1,user1@example.com,hashed_password,85281,100.00
+2,user2@example.com,hashed_password,85281,150.00
+3,user3@example.com,hashed_password,85281,75.00
+4,user4@example.com,hashed_password,85281,50.00
+5,user5@example.com,hashed_password,85281,45.00
